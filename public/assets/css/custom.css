@@ -1,0 +1,426 @@
+.board {
+    display: block;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.btn-blue{
+  background-color: #0f5ef7;
+  color:white;
+}
+.action-item:hover {
+    color: #011c4b !important;
+}
+.page-content {
+    min-height: 800px;
+}
+.rowmlmr0{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+.ap{
+    border-radius: 50% !important;
+    padding: 2px 5px !important;
+}
+.cur {
+    width: fit-content !important;
+    height: 40px !important;
+    border-radius: 10px !important;
+    background: #0f5ef7 !important;
+    color: white !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.action-item:hover {
+    color: #fafbfe;
+}
+.btn-white:hover {
+    color: #eff2f7;
+    background-color: #255ff7;
+    border-color: white;
+}
+/*Max Height*/
+.min-750 {
+    min-height: 750px !important;
+}
+
+.mh-500 {
+    max-height: 500px !important;
+}
+
+.mh-280 {
+    max-height: 280px !important;
+}
+
+.mh-300 {
+    max-height: 300px !important;
+}
+
+.mh-350 {
+    max-height: 350px !important;
+}
+
+.mh-430 {
+    max-height: 430px !important;
+}
+
+/*Min Height*/
+
+.min-410 {
+    min-height: 410px;
+}
+
+.mx-410 {
+    max-height: 410px;
+    overflow-y: auto;
+}
+
+.mx-450 {
+    max-height: 450px;
+    height: 450px !important;
+    overflow-y: auto;
+}
+
+.mx-428 {
+    max-height: 428px;
+    height: 428px !important;
+    overflow-y: auto;
+}
+
+.min-428 {
+    min-height: 428px;
+}
+
+.min-h-750 {
+    min-height: 750px !important;
+}
+
+.min-h-430 .min-410 .mx-410{
+    min-height: 430px !important;
+}
+
+.min-h-500 {
+    min-height: 500px !important;
+}
+
+.min-h-280 {
+    min-height: 280px !important;
+}
+
+.min-h-250 {
+    min-height: 250px !important;
+}
+
+.min-h-300 {
+    min-height: 300px !important;
+}
+
+.min-h-350 {
+    min-height: 350px !important;
+}
+
+.h-250 {
+    height: 250px !important;
+}
+
+.h-300 {
+    height: 300px !important;
+}
+
+
+/*END*/
+.tasks {
+    display: inline-block;
+    width: 19rem;
+    padding: 0 .5rem 0 .5rem;
+    border: 1px solid #ebecf099;
+    vertical-align: top;
+    border-radius: 20px;
+    background: #ebecf099;
+}
+
+.tasks.tasks:not(:last-child) {
+    margin-right: .35rem;
+}
+
+.tasks .task-header {
+    flex: 0 0 auto;
+    padding: 12px 8px;
+    position: relative;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    font-weight: bolder;
+    color: #34395e;
+    font-size: 13px;
+}
+
+.task-list-items {
+    min-height: 120px;
+    position: relative;
+    box-shadow: 0 0 49px rgba(105, 105, 105, 0.09);
+    border-radius: 10px;
+}
+.forproject{
+  padding: 0px 20px !important;
+}
+.task-list-items:before {
+    content: "";
+    position: absolute;
+    line-height: 110px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.task-list-items h6 .badge {
+    font-size: 5px !important;
+    padding: 0px 8px !important;
+}
+
+.pro-task-list-items {
+    min-height: 120px;
+    position: relative;
+    box-shadow: 0 0 49px rgba(105, 105, 105, 0.09);
+    border-radius: 10px;
+}
+
+.pro-task-list-items:before {
+    content: "No Tasks";
+    position: absolute;
+    line-height: 110px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+.pro-task-list-items h6 .badge {
+    font-size: 5px !important;
+    padding: 0px 8px !important;
+}
+
+.for-leads:before {
+    content: "No Leads";
+}
+
+.tasks .card {
+    white-space: normal;
+    margin-top: 1rem;
+    border-radius: 10px !important;
+}
+
+.tasks .card .text-body {
+    font-size: 14px;
+}
+
+.gu-mirror {
+    position: fixed !important;
+    margin: 0 !important;
+    z-index: 9999 !important;
+    opacity: .8
+}
+
+.gu-mirror .text-body {
+    font-size: 14px !important;
+}
+
+.gu-mirror .badge {
+    font-size: 5px !important;
+    padding: 0px 8px !important;
+}
+
+.gu-hide {
+    display: none !important
+}
+.comment-holder .media-body h5 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.comment-holder .media-body p {
+    font-size: 13px;
+}
+
+.comment-holder .media {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.gu-unselectable {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important
+}
+
+.gu-transit {
+    opacity: .2;
+}
+
+.action-item:focus {
+    outline: none;
+}
+
+.dragula-handle {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+    text-align: center;
+    cursor: move
+}
+
+.dz-message {
+    border: none !important;
+}
+
+.dropzone .dz-preview .dz-image img {
+    width: 100% !important;
+}
+
+.dropzone.dz-clickable {
+    background: #fff !important;
+}
+
+.dropzone .dz-preview {
+    margin: 10px !important;
+    padding: 10px !important;
+    width: 120px !important;
+}
+
+.dropzone .dz-preview .dz-image {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.dz-filename {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+.dropzone {
+    display: block !important;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+body.sidebar-mini .main-footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.deal_title:hover .deal_icon {
+    display: inline-block;
+}
+
+.deal_icon {
+    display: none;
+}
+
+.deal_status {
+    float: right;
+    position: absolute;
+    right: 0;
+}
+
+.deal_status a:hover {
+    text-decoration: none;
+}
+
+.due_amount tr {
+    border-bottom: 1px solid #f7f8f9;
+}
+
+.due_amount tr:last-child {
+    border-bottom: none;
+}
+
+.h-1050 {
+    /*height: 1050px !important;*/
+    height: 990px !important;
+}
+
+.beep:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 6px;
+    height: 6px;
+    background-color: #ffa426;
+    border-radius: 50%;
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: 1;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(0.1, 0.1);
+        opacity: 0.0;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    100% {
+        -webkit-transform: scale(1.2, 1.2);
+        opacity: 0.0;
+    }
+}
+
+.max-380 {
+    max-height: 380px;
+    min-height: 380px;
+    overflow-y: auto;
+}
+
+.setting-img {
+    height: 68px !important;
+    width: auto !important;
+    filter: drop-shadow(1px 1px 2px #222);
+}
+
+/*TIMESHEET PAGE CSS*/
+.project-timesheet table .task-name {
+    white-space: unset;
+}
+
+.project-timesheet tbody tr td span {
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.project-timesheet th.heading span {
+    display: block;
+}
+
+.project-timesheet th.heading {
+    text-align: center;
+}
+
+.project-timesheet tbody tr td {
+    padding: 1rem !important;
+    vertical-align: middle;
+}
+
+.project-timesheet tbody tr td:first-child, .project-timesheet tfoot tr td:first-child {
+    min-width: 200px;
+    text-align: left;
+}
+
+.project-timesheet tbody tr td:not(:first-child) span {
+    width: 60px;
+    border: 1px solid #dee2e6;
+    padding: 5px 20px;
+    transition: padding 0.15s ease 0s;
+    border-radius: 5px;
+}

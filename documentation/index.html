@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Documentation">
+    <meta name="author" content="rajodiya.com">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="assets/libs/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/site.css" id="stylesheet">
+    <link rel="stylesheet" href="assets/css/docs.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="docs">
+<header class="header fixed-top border-bottom">
+    <nav id="navbar-main" class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                ERPGo SaaS Documentation
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                </ul>
+                <a href="https://www.rajodiya.com/" class="btn btn-sm btn-primary btn-icon d-none d-lg-inline-flex">
+                    <span class="btn-inner--icon"><i class="fas fa-eye"></i></span>
+                    <span class="btn-inner--text">Rajodiya.com</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<nav class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white" id="sidenav-main">
+    <div class="px-3 scrollbar-inner">
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+            <ul class="navbar-nav navbar-nav-docs">
+                <li class="nav-item">
+                    <a class="nav-link" href="#navbar-getting-started" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-getting-started">
+                        Getting started
+                    </a>
+                    <div class="collapse show" id="navbar-getting-started">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Welcome</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#license" class="nav-link">License</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#navbar-installation" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-installation">
+                        Installation
+                    </a>
+                    <div class="collapse show" id="navbar-installation">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#installation" class="nav-link">Server Requirement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#create_database" class="nav-link">Create Database</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#upload_files" class="nav-link">Uploading File</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#installation_wizard" class="nav-link">Installation Wizard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#default_login" class="nav-link">Default Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                 <li class="nav-item">
+                    <a class="nav-link" href="#navbar-payment" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="navbar-installation">
+                        Payment
+                    </a>
+                    <div class="collapse show" id="navbar-payment">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a href="#paypal-configuration" class="nav-link">Paypal</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#stripe-configuration" class="nav-link">Stripe</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#paystack-configuration" class="nav-link">Paystack</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#flutterwave-configuration" class="nav-link">Flutterwave</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#razorpay-configuration" class="nav-link">Razorpay</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#Paytm-configuration" class="nav-link">Paytm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#mercadopago-configuration" class="nav-link">Mercado Pago</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#mollie-configuration" class="nav-link">Mollie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#skrill-configuration" class="nav-link">Skrill</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#coingate-configuration" class="nav-link">CoinGate</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#upgrade">
+                        Upgrade
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faq">
+                        FAQ
+                    </a>
+                </li>
+            </ul>
+            <h6 class="navbar-heading text-muted mt-4">Resources</h6>
+            <ul class="navbar-nav mb-md-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://support.rajodiya.com/" target="_blank">
+                        <i class="fas fa-question-circle"></i>Support
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://codecanyon.net/user/rajodiyainfotech/portfolio" target="_blank">
+                        <i class="fas fa-user"></i>Our Other Products
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8">
+                <div class="docs-content">
+                    <div class="docs-page-title">
+                        <h2>Welcome</h2>
+                    </div>
+                    <p>This Documentation describes the installation and configuration steps of script.</p>
+                    <p>While the installation process is rather simple, some of the instructions presented here will require minimum understanding in working with databases and managing files on a server.</p>
+                    <p>If you're not familiar with the procedures presented, We can help you via support desk. <a href="https://support.rajodiya.com/" target="_blank">Support Desk</a></p>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="license">License</h2>
+                    <p><b>Regular License</b></p>
+                    <p>Use, by you or one client, in a single end product which end users are <code class="badge badge-info">not charged</code> for. The total price includes the item price and a buyer fee.</p>
+
+                    <p><b>Extended License</b></p>
+                    <p>Use, by you or one client, in a single end product which end users can be <code class="badge badge-info">charged</code> for. The total price includes the item price and a buyer fee.</p>
+
+                    <p>Please purchase Extended License if you are going to sell as a service. <a href="https://codecanyon.net/licenses/standard" target="_blank">Envato License Policy</a></p>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="installation">Installation</h2>
+                    <p class="text-muted docs-lead">It comes with prebuilt installer. Follow these steps to step guide on your server.</p>
+
+                    <hr class="divider divider-fade"/>
+                    <h2 id="server_requirement">Server Requirements</h2>
+                    <p>We are using laravel 7.0 So these are the minimum server requirements, the installer will check if your server meets these or alternatively you can contact your hosting provider in order to make sure your server meets them.</p>
+                    <ul>
+                        <li>PHP >= 7.2.5</li>
+                        <li>BCMath PHP Extension</li>
+                        <li>Ctype PHP Extension</li>
+                        <li>Fileinfo PHP extension</li>
+                        <li>JSON PHP Extension</li>
+                        <li>Mbstring PHP Extension</li>
+                        <li>OpenSSL PHP Extension</li>
+                        <li>PDO PHP Extension</li>
+                        <li>Tokenizer PHP Extension</li>
+                        <li>XML PHP Extension</li>
+                    </ul>
+
+                    <hr class="divider divider-fade"/>
+                    <h2 id="create_database">Creating a new database</h2>
+                    <p>Before installing, you will need to create a new database. If you already know how to do this or have already created one, skip to the next step.Please use <code class="badge badge-info">empty database</code>. In most cases you should be able to create a database from your cpanel.</p>
+                    <section class="small mb-3">
+                        <div class="font-weight-medium text-muted">Useful resources</div>
+                        <div><a href="https://documentation.cpanel.net/display/74Docs/MySQL+Database+Wizard" target="_blank" rel="nofollow">cPanel - MySQL Database Wizard</a></div>
+                        <div><a href="https://docs.plesk.com/en-US/obsidian/customer-guide/website-databases.69535/" target="_blank" rel="nofollow">Plesk - Website databases</a></div>
+                    </section>
+                    <p><img src="assets/img/db1.png" alt="logo" style="width: 100%"></p>
+                    <p><img src="assets/img/db2.png" alt="logo" style="width: 75%"></p>
+                    <p>Now you need to create a new user. On the same page go to create a new database user</p>
+                    <p><img src="assets/img/db3.png" alt="logo" style="width: 75%"></p>
+                    <p>Now add the user to the database</p>
+                    <p><img src="assets/img/db4.png" alt="logo" style="width: 75%"></p>
+                    <p>And select full permissions on the database to that user</p>
+                    <p><img src="assets/img/db5.png" alt="logo" style="width: 75%"></p>
+                    <h2 id="upload_files">Uploading Files</h2>
+                    <div class="alert alert-info">
+                        <span>On some operating systems, the dotfiles are hidden by default. Before starting to upload the files, please make sure your file explorer has the option to view hidden files turned on.</span>
+                    </div>
+                    <p>After creating a database, Upload what's inside the <code class="badge badge-primary">main_file</code> folder on the web root folder of your domain. This folder is generally called <code class="badge badge-info">public_html</code>, <code class="badge badge-info">html</code>, or <code class="badge badge-info">example.com</code>, but depending on your server's configuration, it might be named differently.</p>
+                    <section class="small mb-3">
+                        <div class="font-weight-medium text-muted">Useful resources</div>
+                        <div><a href="https://documentation.cpanel.net/display/68Docs/File+Manager" target="_blank" rel="nofollow">cPanel - File Manager</a></div>
+                        <div><a href="http://docs.plesk.com/en-US/12.5/customer-guide/websites-and-domains/website-content/uploading-content-with-file-manager.74105/" target="_blank" rel="nofollow">Plesk - Uploading content with File Manager</a></div>
+                    </section>
+                    <div class="alert alert-danger">
+                        <strong>Important</strong> Important Make sure that you have .env file in your folder.
+                    </div>
+                    <div class="alert alert-danger">
+                        <strong>Important</strong> Make sure that .htaccess file got copied properly from the download to your server.
+                    </div>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="installation_wizard">Installation Wizard</h2>
+                    <p>Go to your website address, then you'll see an installation wizard. To open the installer. Visit</p>
+                    <div class="alert alert-info">
+                        <span>yourdomain.com/install</span>
+                    </div>
+                    <p>Now the installer will show up.The First screen will be Welcome Screen</p>
+                    <p><img src="assets/img/1.png" alt="logo" style="width: 65%"></p>
+                    <div class="alert alert-danger">
+                        <strong>Note</strong> : If you are not able to access the website by accessing
+                        yourdomain.com/install, but you are able to access it via yourdomain.com/index.php/install, this means that you probably don't have Apache mod_rewrite installed and enabled.
+                    </div>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="system_requirement">System Requirements</h2>
+                    <p>After clicking on "Check requirement" button, you will be redirected to System Requirements step during the installation wizard, System Requirements.</p>
+                    <p><img src="assets/img/2.png" alt="logo" style="width: 55%"></p>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="directory_permission">Directory Permissions</h2>
+                    <p>After successfully enabling and installing all required PHP extensions, next step is to set the appropriate permissions for some system folders that shows on below picture.</p>
+                    <div class="alert alert-info">
+                        For giving permissions please open your terminal window. and type command <code class="badge badge-primary">sudo chmod 777 directory_name</code>
+                        for example <code class="badge badge-info">sudo chmod 777 app</code>
+                    </div>
+
+                    <section class="small mb-3">
+                        <div class="font-weight-medium text-muted">Useful resources</div>
+                        <div><a href="https://documentation.cpanel.net/display/68Docs/File+Manager#FileManager-Modifyfileorfolderpermissions" target="_blank" rel="nofollow">cPanel - Update file or folder permissions</a></div>
+                        <div><a href="http://docs.plesk.com/en-US/12.5/customer-guide/websites-and-domains/website-content/setting-file-and-directory-access-permissions.70738/" target="_blank" rel="nofollow">Plesk - Setting file and directory access permissions</a></div>
+                    </section>
+                    <p><img src="assets/img/3.png" alt="logo" style="width: 55%"></p>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="env_setting">Database/Environment Setting</h2>
+                    <p>You have to fill in your database credentials</p>
+                    <p><img src="assets/img/4.png" alt="logo" style="width: 50%"></p>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="exit">Exit</h2>
+                    <p>The last step is exit step.</p>
+                    <p><img src="assets/img/5.png" alt="logo" style="width: 50%"></p>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="default_login">Default Login</h2>
+                    <p>Now You are ready to login with below detail.</p>
+                    <div class="alert alert-info">
+                        <strong>Supe Admin Login Detail</strong>
+                        <p>superadmin@example.com / 1234</p>
+                        <strong>Company Login Detail</strong>
+                        <p>company@example.com / 1234</p>
+                        <strong>User Login Detail</strong>
+                        <p>accountant@example.com / 1234</p>
+                    </div>
+
+<hr class="divider divider-fade">
+                    <h2 id="paypal-configuration">Paypal</h2>
+                    <p><b>The PayPal integration gives your users the ability to pay via PayPal on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://developer.paypal.com/">PayPal Developer Console</a> and Login to your account after clicking the <strong>Log into Dashboard</strong> button</li>
+                        <li class="pb-1">Go to <strong>REST API apps</strong> section and click the <strong>Create App</strong> button.</li>
+                        <li class="pb-1">Add your own details for the new app and create it.</li>
+                        <li class="pb-1">Switch to <strong>Live</strong> by clicking the button near your new App's Name.</li>
+                        <li class="pb-1">Copy the <strong>Client ID</strong> and <strong>Secret</strong>.</li>
+                        <li class="pb-1">Go to your new Product's <strong>Super Admin Panel</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Payment Settings</strong> and enter the <strong>Client ID</strong> and <strong>Secret</strong> keys.</li>
+                        <li class="pb-1">Make sure to also switch the <strong>Mode</strong> to <strong>Live</strong> and <strong>Submit</strong> the new settings.</li>
+                        <li class="pb-1">Go to the newly created App in the Paypal Developer Console and click on the <strong>Add Webhook</strong> button.</li>
+                        <li class="pb-1">In the <strong>Webhook Url</strong> field, add your website's URL in this format: <code>https://yourdomain.com/webhook-paypal</code> (replace <code>yourdomain.com</code> with your own domain name).</li>
+                        <li class="pb-1">In the <strong>Event types</strong> field, check the <strong>Payment sale completed</strong> event and submit the Webhook.</li>
+                    </ol>
+                    <h2 id="stripe-configuration">Stripe</h2>
+                    <p><b>The Stripe integration gives your users the ability to pay via Stripe on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://dashboard.stripe.com/">Stripe Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">Go to <a href="https://dashboard.stripe.com/account/apikeys">Stripe API Keys</a> page.</li>
+                        <li class="pb-1">Make sure your API keys are set to <strong>Live Mode</strong> so that you can accept real payments.</li>
+                        <li class="pb-1">Copy the <strong>Publishable key</strong> and <strong>Secret key</strong>.</li>
+                        <li class="pb-1">Go to your new Product's <strong>Super Admin Panel</strong> -&gt; <strong>Settings</strong> -&gt; <strong>Payment Settings</strong> and enter the <strong>Stripe key</strong> and <strong>Stripe Secret</strong>.</li>
+                        <li class="pb-1">From the sidebar, under <strong>Developers</strong> click on <strong>Webhooks</strong> link.</li>
+                        <li class="pb-1">Click on the <strong>Add endpoint</strong> button.</li>
+                        <li class="pb-1">In the <strong>Endpoint URL</strong> field, add your website's URL in this format: <code>https://yourdomain.com/webhook-stripe</code> (replace <code>yourdomain.com</code> with your own domain name).</li>
+                        <li class="pb-1">In the <strong>Events to send</strong> field, select the <code>checkout.session.completed</code>, <code>invoice.paid</code>, <code>invoice.upcoming</code> and click the <strong>Add endpoint</strong> button.</li>
+                        <li class="pb-1">Copy the <strong>Signing secret</strong> key and paste it in the product's <strong>Webhook Secret</strong> field in the super admin panel.</li>
+                    </ol>
+
+
+                     <hr class="divider divider-fade">
+                    <h2 id="paystack-configuration">Paystack</h2>
+                    <p><b>The Paystack integration gives your users the ability to pay via Paystack on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://dashboard.paystack.com/">Paystack Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">Login to your dashboard, To get your api keys go to Settings, then Settings > Api & webhooks</li>
+
+                    </ol>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="flutterwave-configuration">Flutterwave</h2>
+                    <p><b>The Flutterwave integration gives your users the ability to pay via Flutterwave on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://dashboard.flutterwave.com/login/">Flutterwave Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">Go to <a href="https://dashboard.flutterwave.com/dashboard/settings/apis/">Flutterwave API Keys</a> page.</li>
+
+                    </ol>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="razorpay-configuration">Razorpay</h2>
+                    <p><b>The Razorpay integration gives your users the ability to pay via Razorpay on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://dashboard.razorpay.com/#/access/signin">Razorpay Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">Go to <a href="https://dashboard.razorpay.com/app/keys">Razorpay API Keys</a> page.</li>
+
+                    </ol>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="Paytm-configuration">Paytm</h2>
+                    <p><b>The Paytm integration gives your users the ability to pay via Paytm on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://dashboard.paytm.com/">Paytm Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">They are available in the <a href="https://dashboard.paytm.com/next/apikeys">Credentials panel</a> or from your Mercado Pago account in Your Business > Settings > Credentials.</li>
+
+                    </ol>
+                    <hr class="divider divider-fade">
+                    <h2 id="mercadopago-configuration">Mercado Pago</h2>
+                    <p><b>The Mercado Pago integration gives your users the ability to pay via Mercado Pago on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://www.mercadopago.com">Mercado Pago Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">They are available in the <a href="https://www.mercadopago.com.br/developers/en/guides/resources/faqs/credentials">Credentials panel</a> or from your Mercado Pago account in Your Business > Settings > Credentials.</li>
+                        <li class="pb-1">In the <strong>Webhook Url</strong> field, add your website's URL in this format: <code>https://yourdomain.com/mercadopago/callback</code> (replace <code>yourdomain.com</code> with your own domain name).</li>
+                    </ol>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="mollie-configuration">Mollie</h2>
+                    <p><b>The Mollie integration gives your users the ability to pay via Mercado Pago on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://dashboard.paytm.com/login/">Mollie Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">Login to dashboard To get your api keys go to Developers, thenDevelopers> Api kEYS</li>
+
+                    </ol>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="skrill-configuration">Skrill</h2>
+                    <p><b>The Skrill integration gives your users the ability to pay via Skrill on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://account.skrill.com/wallet/account/login?locale=en">Skrill Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">They are available in the <a href="https://signup.skrill.com/onboarding/#/?rdu=onboarding&lang=EN">Credentials panel</a> or from your Skrill account in Your Business > Settings > Credentials.</li>
+
+                    </ol>
+
+                    <hr class="divider divider-fade">
+                    <h2 id="coingate-configuration">CoinGate</h2>
+                    <p><b>The CoinGate integration gives your users the ability to pay via CoinGate on your website.</b></p>
+                    <ol>
+                        <li class="pb-1">Go to <a href="https://www.coingate.com">CoinGate Dashboard</a> and Login to your account.</li>
+                        <li class="pb-1">They are available in the <a href="https://support.coingate.com/en/42/how-can-i-create-coingate-api-credentials">Credentials panel</a> or from your CoinGate account in Your Business > Settings > Credentials.</li>
+                        <li class="pb-1">In the <strong>Webhook Url</strong> field, add your website's URL in this format: <code>https://yourdomain.com/coingate/callback</code> (replace <code>yourdomain.com</code> with your own domain name).</li>
+                    </ol>
+
+                     
+                    <hr class="divider divider-fade">
+                    <h2 id="upgrade">Upgrade</h2>
+                    <div class="alert alert-info">
+                        Before making an update, always remember to do a complete backup of your website.
+                    </div>
+                    <div class="alert alert-info">
+                        If you've made any modifications to the language string, your changes will be lost. you can find your old edited language file on <code class="badge badge-primary">resources/lang</code>. but that will be lost as new version have new language file. so take backup that files for reference of new version that you need to manually again.
+                    </div>
+                    <div class="alert alert-info">
+                        If you've made any modifications to the software's files, your changes will be lost.
+                    </div>
+                    <div class="alert alert-info">
+                        For Upgrade version, you need to do it your self. And we are not responsible if you lost data.
+                    </div>
+
+                    <p>
+                    <ol>
+                        <li class="pb-1">Make a backup of the <code class="badge badge-primary">.env</code> config file and <code class="badge badge-primary">.htaccess</code> located on your server.</li>
+                        <li class="pb-1">Upload and <code class="badge badge-primary">replace all</code> the files on your server with what's inside the <code class="badge badge-primary">main_file</code> folder.</li>
+                        <li class="pb-1">Restore your <code class="badge badge-primary">.env</code> config file and <code class="badge badge-primary">.htaccess</code> on your server.</li>
+                        <li class="pb-1">Do login and follow the update wizard.</li>
+                    </ol>
+                    </p>
+                    <hr class="divider divider-fade">
+                    <h2 id="faq">FAQ</h2>
+                    <div id="accordion-8" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-8" data-toggle="collapse" role="button" data-target="#collapse-1-8" aria-expanded="false" aria-controls="collapse-1-8">
+                                <h6 class="mb-0">How Can I edit email template ?
+                                </h6>
+                            </div>
+                            <div id="collapse-1-8" class="collapse" aria-labelledby="heading-1-8" data-parent="#accordion-8" style="">
+                                <div class="card-body">
+                                    <p>You can edit below files for change email content :</p>
+                                    <p>User Create : resources/views/email/user_create.blade.php</p>
+                                    <p>Proposal Send : resources/views/email/proposal_send.blade.php</p>
+                                    <p>Invoice Send: resources/views/email/invoice_send.blade.php</p>
+                                    <p>Invoice Payment Create: resources/views/email/invoice_payment_create.blade.php</p>
+                                    <p>Bill Send: resources/views/email/bill_send.blade.php</p>
+                                    <p>Bill Payment Create: resources/views/email/bill_payment_create.blade.php</p>
+                                    <p>Payment Reminder : resources/views/email/payment_reminder.blade.php</p>
+                                    <p>Customer Invoice Send : resources/views/email/customer_invoice_send.blade.php</p>
+                                    <p>Vendor Bill Send : resources/views/email/vender_bill_send.blade.php</p>
+                                    <p>Test Mail : resources/views/email/test_mail.blade.php</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion-7" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-7" data-toggle="collapse" role="button" data-target="#collapse-1-7" aria-expanded="false" aria-controls="collapse-1-7">
+                                <h6 class="mb-0">How Can I change landing page!
+                                </h6>
+                            </div>
+                            <div id="collapse-1-7" class="collapse" aria-labelledby="heading-1-7" data-parent="#accordion-7" style="">
+                                <div class="card-body">
+                                    <p>Our landing file in resources/views/layouts/landing.blade.php, images in public/landing/images folder, css in public/landing/css/style.css file. You can edit them.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion-1" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-1" data-toggle="collapse" role="button" data-target="#collapse-1-1" aria-expanded="false" aria-controls="collapse-1-1">
+                                <h6 class="mb-0">I have a support inquiry, a question or a problem, how can I contact you?</h6>
+                            </div>
+                            <div id="collapse-1-1" class="collapse" aria-labelledby="heading-1-1" data-parent="#accordion-1" style="">
+                                <div class="card-body">
+                                    <p>You can contact us here. <a href="https://support.rajodiya.com/" target="_blank">Support Desk</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="accordion-2" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-2" data-toggle="collapse" role="button" data-target="#collapse-1-2" aria-expanded="false" aria-controls="collapse-1-2">
+                                <h6 class="mb-0">My website returns a Not Found message, why?</h6>
+                            </div>
+                            <div id="collapse-1-2" class="collapse" aria-labelledby="heading-1-2" data-parent="#accordion-2" style="">
+                                <div class="card-body">
+                                    <p>Please ensure that you have <code class="badge badge-primary">mod_rewrite</code> enabled on your server.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="accordion-3" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-3" data-toggle="collapse" role="button" data-target="#collapse-1-3" aria-expanded="false" aria-controls="collapse-1-3">
+                                <h6 class="mb-0">My website returns a blank page, why?</h6>
+                            </div>
+                            <div id="collapse-1-3" class="collapse" aria-labelledby="heading-1-3" data-parent="#accordion-3" style="">
+                                <div class="card-body">
+                                    <p>This generally happens when one of the server requirements is not met, please ensure your server meets the software's requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="accordion-4" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-4" data-toggle="collapse" role="button" data-target="#collapse-1-4" aria-expanded="false" aria-controls="collapse-1-4">
+                                <h6 class="mb-0">My logo has not changed!</h6>
+                            </div>
+                            <div id="collapse-1-4" class="collapse" aria-labelledby="heading-1-4" data-parent="#accordion-4" style="">
+                                <div class="card-body">
+                                    <p>Please try to by press f5 or clear your browser cache or try on another browser.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="accordion-5" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-5" data-toggle="collapse" role="button" data-target="#collapse-1-5" aria-expanded="false" aria-controls="collapse-1-5">
+                                <h6 class="mb-0">How can I use SSL!</h6>
+                            </div>
+                            <div id="collapse-1-5" class="collapse" aria-labelledby="heading-1-5" data-parent="#accordion-5" style="">
+                                <div class="card-body">
+                                    <p>Please add this to your your .htaccess file configuration</p>
+                                    <p>RewriteCond %{HTTPS} !=on<br>
+                                        RewriteRule ^/?(.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="accordion-6" class="accordion accordion-spaced">
+                        <div class="card">
+                            <div class="card-header py-4 collapsed" id="heading-1-6" data-toggle="collapse" role="button" data-target="#collapse-1-6" aria-expanded="false" aria-controls="collapse-1-6">
+                                <h6 class="mb-0">How Can I change my files and theme!</h6>
+                            </div>
+                            <div id="collapse-1-6" class="collapse" aria-labelledby="heading-1-6" data-parent="#accordion-6" style="">
+                                <div class="card-body">
+                                    <p>Our theme files in resources/views, assets in public/assets folder. You can edit them.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/site.core.js"></script>
+    <script src="assets/js/site.js"></script>
+</body>
+</html>
